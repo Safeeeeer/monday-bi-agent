@@ -1,10 +1,7 @@
-import os
-from dotenv import load_dotenv
+import streamlit as st
 
-load_dotenv()
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+MONDAY_API_KEY =st.secrets["MONDAY_API_TOKEN"]
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MONDAY_API_KEY = os.getenv("MONDAY_API_KEY")
-
-DEALS_BOARD_ID = os.getenv("DEALS_BOARD_ID")
-WORK_ORDERS_BOARD_ID = os.getenv("WORK_ORDERS_BOARD_ID")
+DEALS_BOARD_ID = st.secrets["DEALS_BOARD_ID"]
+WORK_ORDERS_BOARD_ID = st.secrets["WORK_ORDERS_BOARD_ID"]
