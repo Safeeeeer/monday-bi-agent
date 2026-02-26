@@ -6,7 +6,7 @@ st.title("Monday.com Business Intelligence Agent")
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-query = st.text_input("Ask a founder-level question:")
+query = st.text_input("Ask Here:")
 
 if query:
     result = run_agent(query, st.session_state.chat_history)
